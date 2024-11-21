@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Username Display</title>
+</head>
+<body>
+    <h1>Welcome to Our Website</h1>
+    <form id="usernameForm">
+        <label for="username">Enter your name: </label>
+        <input type="text" id="username" name="Meganathan" required>
+    </form>
+    <h2 id="greeting"></h2>
+
+    <script>
+        function displayUsername() {
+            const username = document.getElementById('username').value;
+            if (username) {
+                document.getElementById('greeting').innerText = `Hello, ${username}!`;
+                document.getElementById('usernameForm').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
